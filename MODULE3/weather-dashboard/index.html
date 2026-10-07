@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Weather Dashboard</h1>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City Name">
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+        </div>
+
+        <div class="weather-card">
+
+            <h2 id="cityName">City Name</h2>
+
+            <p>
+                Temperature:
+                <span id="temperature">--</span>
+            </p>
+
+            <p>
+                Condition:
+                <span id="condition">--</span>
+            </p>
+
+            <p>
+                Humidity:
+                <span id="humidity">--</span>
+            </p>
+
+            <p>
+                Wind Speed:
+                <span id="wind">--</span>
+            </p>
+
+        </div>
+
+        <div class="forecast">
+
+            <div class="forecast-day">
+                Day 1<br>30°C
+            </div>
+
+            <div class="forecast-day">
+                Day 2<br>29°C
+            </div>
+
+            <div class="forecast-day">
+                Day 3<br>31°C
+            </div>
+
+            <div class="forecast-day">
+                Day 4<br>28°C
+            </div>
+
+            <div class="forecast-day">
+                Day 5<br>32°C
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

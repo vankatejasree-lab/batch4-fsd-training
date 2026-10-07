@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Weather & Travel Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Dashboard -->
+
+    <div class="dashboard">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="logo">
+                <span>🌍</span>
+                <div>
+                    <h1>SmartWeather</h1>
+                    <p>Weather & Travel Dashboard</p>
+                </div>
+            </div>
+
+            <div class="status">
+                ● Live Weather
+            </div>
+
+        </header>
+
+
+        <!-- Search Section -->
+
+        <section class="search-section">
+
+            <div class="search-title">
+
+                <p class="small-title">
+                    EXPLORE A DESTINATION
+                </p>
+
+                <h2>
+                    Where do you want to go?
+                </h2>
+
+                <p>
+                    Search a city to discover its weather
+                    and travel recommendations.
+                </p>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                >
+
+                <button id="searchButton">
+                    🔍 Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Error Message -->
+
+        <p id="errorMessage"></p>
+
+
+        <!-- Weather Main Section -->
+
+        <section class="weather-layout">
+
+
+            <!-- Current Weather -->
+
+            <div class="current-weather">
+
+                <div class="location">
+
+                    <span>📍</span>
+
+                    <div>
+                        <p>CURRENT LOCATION</p>
+
+                        <h2 id="cityName">
+                            Search a city
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="weather-main">
+
+                    <div id="weatherIcon"
+                         class="weather-icon">
+                        🌤️
+                    </div>
+
+                    <div>
+
+                        <div class="temperature">
+
+                            <span id="temperature">
+                                --
+                            </span>
+
+                            <sup>°C</sup>
+
+                        </div>
+
+                        <p id="weatherCondition">
+                            Search for weather
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Weather Details -->
+
+                <div class="weather-details">
+
+
+                    <div class="detail-card">
+
+                        <span>🌡️</span>
+
+                        <div>
+
+                            <p>Feels Like</p>
+
+                            <strong id="feelsLike">
+                                -- °C
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <span>💧</span>
+
+                        <div>
+
+                            <p>Humidity</p>
+
+                            <strong id="humidity">
+                                -- %
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <span>💨</span>
+
+                        <div>
+
+                            <p>Wind Speed</p>
+
+                            <strong id="windSpeed">
+                                -- km/h
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Travel Suggestion -->
+
+            <div class="travel-card">
+
+                <div class="travel-heading">
+
+                    <span>✈️</span>
+
+                    <div>
+
+                        <p>SMART TRAVEL GUIDE</p>
+
+                        <h2>
+                            Travel Suggestion
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div id="travelIcon"
+                     class="travel-icon">
+                    🧳
+                </div>
+
+
+                <h3 id="travelTitle">
+                    Ready to Explore?
+                </h3>
+
+
+                <p id="travelSuggestion">
+
+                    Search for a city to receive
+                    personalized travel suggestions
+                    based on its weather.
+
+                </p>
+
+
+                <div class="travel-tip">
+
+                    💡
+                    <span>
+                        Weather-based recommendations
+                        help you plan your trip better.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Forecast -->
+
+        <section class="forecast-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-title">
+                        WEATHER OUTLOOK
+                    </p>
+
+                    <h2>
+                        Today's Forecast
+                    </h2>
+
+                </div>
+
+                <span id="forecastLocation">
+                    —
+                </span>
+
+            </div>
+
+
+            <div class="forecast-card">
+
+                <div>
+                    <span>🌅</span>
+                    <p>Morning</p>
+                    <strong id="morningTemp">--°C</strong>
+                </div>
+
+                <div>
+                    <span>☀️</span>
+                    <p>Afternoon</p>
+                    <strong id="afternoonTemp">--°C</strong>
+                </div>
+
+                <div>
+                    <span>🌇</span>
+                    <p>Evening</p>
+                    <strong id="eveningTemp">--°C</strong>
+                </div>
+
+                <div>
+                    <span>🌙</span>
+                    <p>Night</p>
+                    <strong id="nightTemp">--°C</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>
+                🌍 SmartWeather & Travel Dashboard
+            </p>
+
+            <p>
+                Powered by Open-Meteo API
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
